@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Entities headers="X-XSRF-TOKEN=TWX-XSRF-TOKEN-VALUE:appKey=089a566e-e2e1-47a5-bd52-f13c330cebd9:Content-Type=application/json" majorVersion="9" minorVersion="3" universal="password">
+    <Organizations>
+        <Organization description="" documentationContent="" homeMashup="" loginButtonStyle="" loginPrompt="" loginResetPassword="false" loginStyle="" mobileMashup="" name="PTCSC.TestBB2.Default_OR" projectName="PTCSC.TestBB2" resetMailContent="&lt;p&gt;[[resetemail.requestmade]]&lt;/p&gt;&lt;p&gt;[[resetemail.instructions]]&lt;/p&gt;&lt;p&gt;[[resetemail.helpneeded]]&lt;/p&gt;" resetMailServer="" resetMailSubject="[[resetemail.subject]]" tags="">
+            <avatar/>
+            <DesignTimePermissions>
+                <Create/>
+                <Read/>
+                <Update/>
+                <Delete/>
+                <Metadata/>
+            </DesignTimePermissions>
+            <RunTimePermissions/>
+            <VisibilityPermissions>
+                <Visibility>
+                    <Principal isPermitted="true" name="PTCSC.TestBB2.Default_OR" type="Organization"/>
+                    <Principal isPermitted="true" name="PTCSC.TestBB2.Default_OR:PTCSC.TestBB2.Admin_UG" type="OrganizationalUnit"/>
+                </Visibility>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions/>
+            <ConfigurationTables/>
+            <loginImage/>
+            <Connections>
+                <Connection from="" to="Root"/>
+                <Connection from="Root" to="PTCSC.TestBB2.Admin_UG"/>
+                <Connection from="Root" to="PTCSC.TestBB2.Default_UG"/>
+            </Connections>
+            <OrganizationalUnits>
+                <OrganizationalUnit description="" name="PTCSC.TestBB2.Admin_UG">
+                    <Members>
+                        <Members>
+                            <Member name="PTCSC.TestBB2.Admin_UG" type="Group"/>
+                        </Members>
+                    </Members>
+                </OrganizationalUnit>
+                <OrganizationalUnit description="" name="PTCSC.TestBB2.Default_UG">
+                    <Members>
+                        <Members>
+                            <Member name="PTCSC.TestBB2.Default_UG" type="Group"/>
+                        </Members>
+                    </Members>
+                </OrganizationalUnit>
+                <OrganizationalUnit description="" name="Root">
+                    <Members>
+                        <Members/>
+                    </Members>
+                </OrganizationalUnit>
+            </OrganizationalUnits>
+        </Organization>
+    </Organizations>
+</Entities>
