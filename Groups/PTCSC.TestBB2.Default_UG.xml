@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Entities headers="X-XSRF-TOKEN=TWX-XSRF-TOKEN-VALUE:appKey=089a566e-e2e1-47a5-bd52-f13c330cebd9:Content-Type=application/json" majorVersion="9" minorVersion="5" universal="password">
+    <Groups>
+        <Group description="" documentationContent="" homeMashup="" name="PTCSC.TestBB2.Default_UG" projectName="PTCSC.TestBB2" scimDisplayName="" scimExternalId="" scimId="" tags="">
+            <avatar/>
+            <DesignTimePermissions>
+                <Create/>
+                <Read/>
+                <Update/>
+                <Delete/>
+                <Metadata/>
+            </DesignTimePermissions>
+            <RunTimePermissions/>
+            <VisibilityPermissions>
+                <Visibility>
+                    <Principal isPermitted="true" name="PTCSC.TestBB2.Default_OR" type="Organization"/>
+                    <Principal isPermitted="true" name="PTCSC.TestBB2.Default_OR:PTCSC.TestBB2.Admin_UG" type="OrganizationalUnit"/>
+                </Visibility>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions/>
+            <ConfigurationTables/>
+            <Members>
+                <Members/>
+            </Members>
+        </Group>
+    </Groups>
+</Entities>
