@@ -34,11 +34,13 @@
             <RemoteEventBindings/>
             <AlertConfigurations>
                 <AlertDefinitions name="testAdi"/>
+                <AlertDefinitions name="testAdi2"/>
                 <AlertDefinitions name="testDan"/>
             </AlertConfigurations>
             <ThingShape>
                 <PropertyDefinitions>
                     <PropertyDefinition aspect.dataChangeType="VALUE" baseType="STRING" category="" description="" isLocalOnly="false" name="testAdi" ordinal="2"/>
+                    <PropertyDefinition aspect.dataChangeType="VALUE" baseType="STRING" category="" description="" isLocalOnly="false" name="testAdi2" ordinal="4"/>
                     <PropertyDefinition aspect.dataChangeType="VALUE" baseType="STRING" category="" description="" isLocalOnly="false" name="testDan" ordinal="3"/>
                 </PropertyDefinitions>
                 <ServiceDefinitions/>
