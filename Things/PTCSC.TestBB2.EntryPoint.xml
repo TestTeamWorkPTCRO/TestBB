@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><Entities headers="X-XSRF-TOKEN=TWX-XSRF-TOKEN-VALUE:appKey=089a566e-e2e1-47a5-bd52-f13c330cebd9:Content-Type=application/json" majorVersion="9" minorVersion="3" universal="password">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Entities headers="X-XSRF-TOKEN=TWX-XSRF-TOKEN-VALUE:appKey=089a566e-e2e1-47a5-bd52-f13c330cebd9:Content-Type=application/json" majorVersion="9" minorVersion="5" universal="password">
     <Things>
         <Thing aspect.isSystemObject="false" description="test" documentationContent="" effectiveThingPackage="ConfiguredThing" enabled="true" homeMashup="" identifier="" inheritedValueStream="" name="PTCSC.TestBB2.EntryPoint" projectName="PTCSC.TestBB2" published="false" tags="" thingTemplate="PTCSC.TestBB2.EntryPoint_TT" valueStream="">
             <avatar/>
@@ -82,36 +82,90 @@
                     <Timestamp>2024-03-20T14:59:15.516Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </dependentComponents>
+                <deployComponentStatus>
+                    <Value>
+                        <infoTable>
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition aspect.defaultValue="{}" aspect.isPrimaryKey="false" baseType="JSON" description="Information about the internal status." name="additionalInfo" ordinal="0"/>
+                                    <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="Current version of the component" name="currentVersion" ordinal="0"/>
+                                    <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="Name of the Component" name="name" ordinal="0"/>
+                                    <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="config status of the component" name="status" ordinal="0"/>
+                                    <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="Type of action." name="type" ordinal="0"/>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows/>
+                        </infoTable>
+                    </Value>
+                    <Timestamp>2024-03-20T14:59:15.516Z</Timestamp>
+                    <Quality>GOOD</Quality>
+                </deployComponentStatus>
                 <componentDescription>
                     <Value><![CDATA[test]]></Value>
                     <Timestamp>2024-03-20T14:59:15.375Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </componentDescription>
+                <migrateComponentStatus>
+                    <Value>
+                        <infoTable>
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition aspect.defaultValue="{}" aspect.isPrimaryKey="false" baseType="JSON" description="Information about the internal status." name="additionalInfo" ordinal="0"/>
+                                    <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="Current version of the component" name="currentVersion" ordinal="0"/>
+                                    <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="Name of the Component" name="name" ordinal="0"/>
+                                    <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="config status of the component" name="status" ordinal="0"/>
+                                    <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="Type of action." name="type" ordinal="0"/>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows/>
+                        </infoTable>
+                    </Value>
+                    <Timestamp>2024-03-20T14:59:15.516Z</Timestamp>
+                    <Quality>GOOD</Quality>
+                </migrateComponentStatus>
                 <componentDefaultUserGroup>
                     <Value><![CDATA[PTCSC.TestBB2.Default_UG]]></Value>
                     <Timestamp>2024-03-20T14:59:15.375Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </componentDefaultUserGroup>
-                <componentMainMashup>
-                    <Value/>
-                    <Timestamp>2024-03-20T14:59:15.516Z</Timestamp>
-                    <Quality>GOOD</Quality>
-                </componentMainMashup>
                 <componentThumbnail>
                     <Value/>
                     <Timestamp>2024-03-20T14:59:15.516Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </componentThumbnail>
-                <componentName>
-                    <Value><![CDATA[PTCSC.TestBB2]]></Value>
-                    <Timestamp>2024-03-20T14:59:15.375Z</Timestamp>
-                    <Quality>GOOD</Quality>
-                </componentName>
                 <componentVersion>
                     <Value><![CDATA[1.0.0]]></Value>
                     <Timestamp>2024-03-20T14:59:15.735Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </componentVersion>
+                <componentMainMashup>
+                    <Value/>
+                    <Timestamp>2024-03-20T14:59:15.516Z</Timestamp>
+                    <Quality>GOOD</Quality>
+                </componentMainMashup>
+                <componentName>
+                    <Value><![CDATA[PTCSC.TestBB2]]></Value>
+                    <Timestamp>2024-03-20T14:59:15.375Z</Timestamp>
+                    <Quality>GOOD</Quality>
+                </componentName>
+                <upgradeComponentStatus>
+                    <Value>
+                        <infoTable>
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition aspect.defaultValue="{}" aspect.isPrimaryKey="false" baseType="JSON" description="Information about the internal status." name="additionalInfo" ordinal="0"/>
+                                    <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="Current version of the component" name="currentVersion" ordinal="0"/>
+                                    <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="Name of the Component" name="name" ordinal="0"/>
+                                    <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="config status of the component" name="status" ordinal="0"/>
+                                    <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="Type of action." name="type" ordinal="0"/>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows/>
+                        </infoTable>
+                    </Value>
+                    <Timestamp>2024-03-20T14:59:15.516Z</Timestamp>
+                    <Quality>GOOD</Quality>
+                </upgradeComponentStatus>
             </ThingProperties>
         </Thing>
     </Things>
