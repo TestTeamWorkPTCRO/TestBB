@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Entities headers="X-XSRF-TOKEN=TWX-XSRF-TOKEN-VALUE:appKey=089a566e-e2e1-47a5-bd52-f13c330cebd9:Content-Type=application/json" majorVersion="9" minorVersion="5" universal="password">
+    <Projects>
+        <Project artifactId="" aspect.projectType="Component" dependsOn="{&quot;extensions&quot;:&quot;PTC.Base:9.5.0&quot;,&quot;projects&quot;:&quot;PTC.Base:0.0.0&quot;}" description="" documentationContent="" groupId="" homeMashup="" minPlatformVersion="" name="PTCSC.TestBB2" packageVersion="1.0.0" projectName="PTCSC.TestBB2" publishResult="" state="DRAFT" tags="">
+            <avatar/>
+            <DesignTimePermissions>
+                <Create/>
+                <Read/>
+                <Update/>
+                <Delete/>
+                <Metadata/>
+            </DesignTimePermissions>
+            <RunTimePermissions/>
+            <VisibilityPermissions>
+                <Visibility>
+                    <Principal isPermitted="true" name="PTCSC.TestBB2.Default_OR" type="Organization"/>
+                    <Principal isPermitted="true" name="PTCSC.TestBB2.Default_OR:PTCSC.TestBB2.Admin_UG" type="OrganizationalUnit"/>
+                </Visibility>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions/>
+            <ConfigurationTables/>
+        </Project>
+    </Projects>
+</Entities>
