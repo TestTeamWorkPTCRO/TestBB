@@ -61,7 +61,7 @@
             </ConfigurationTables>
             <ThingShape>
                 <PropertyDefinitions>
-                    <PropertyDefinition aspect.dataChangeType="VALUE" aspect.isPersistent="true" baseType="STRING" category="" description="" isLocalOnly="false" name="testAdi" ordinal="2"/>
+                    <PropertyDefinition aspect.dataChangeType="VALUE" aspect.isPersistent="true" baseType="TEXT" category="" description="" isLocalOnly="false" name="testAdi" ordinal="2"/>
                 </PropertyDefinitions>
                 <ServiceDefinitions/>
                 <EventDefinitions/>
