@@ -80,8 +80,8 @@
             <ThingProperties>
                 <testAdi>
                     <Value/>
-                    <Timestamp>1970-01-01T00:00:00.000Z</Timestamp>
-                    <Quality>UNKNOWN</Quality>
+                    <Timestamp>2024-04-01T13:03:05.107Z</Timestamp>
+                    <Quality>GOOD</Quality>
                 </testAdi>
             </ThingProperties>
         </Thing>
