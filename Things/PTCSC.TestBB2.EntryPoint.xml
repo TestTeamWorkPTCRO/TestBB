@@ -72,8 +72,8 @@
                         <infoTable>
                             <DataShape>
                                 <FieldDefinitions>
-                                    <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="Common name of the component" name="ComponentName" ordinal="1"/>
-                                    <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="Component's project name" name="ComponentProjectName" ordinal="2"/>
+                                    <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="Common name of the component" name="ComponentName" ordinal="0"/>
+                                    <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="Component's project name" name="ComponentProjectName" ordinal="0"/>
                                 </FieldDefinitions>
                             </DataShape>
                             <Rows/>
