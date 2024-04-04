@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><Entities headers="X-XSRF-TOKEN=TWX-XSRF-TOKEN-VALUE:appKey=089a566e-e2e1-47a5-bd52-f13c330cebd9:Content-Type=application/json" majorVersion="9" minorVersion="5" universal="password">
     <ThingShapes>
         <ThingShape aspect.isSystemObject="false" className="" description="test" documentationContent="" homeMashup="" name="PTCSC.TestBB2.Management_TS" projectName="PTCSC.TestBB2" tags="">
-            <PropertyDefinitions/>
+            <PropertyDefinitions>
+                <PropertyDefinition aspect.dataChangeType="VALUE" baseType="STRING" category="" description="" isLocalOnly="false" name="test" ordinal="2"/>
+            </PropertyDefinitions>
             <ServiceDefinitions/>
             <EventDefinitions/>
             <ServiceMappings/>
@@ -28,7 +30,9 @@
             <RemotePropertyBindings/>
             <RemoteServiceBindings/>
             <RemoteEventBindings/>
-            <AlertConfigurations/>
+            <AlertConfigurations>
+                <AlertDefinitions name="test"/>
+            </AlertConfigurations>
             <InstanceRunTimePermissions/>
         </ThingShape>
     </ThingShapes>
