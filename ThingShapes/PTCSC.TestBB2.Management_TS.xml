@@ -4,10 +4,36 @@
             <PropertyDefinitions>
                 <PropertyDefinition aspect.dataChangeType="VALUE" baseType="STRING" category="" description="" isLocalOnly="false" name="test" ordinal="2"/>
             </PropertyDefinitions>
-            <ServiceDefinitions/>
+            <ServiceDefinitions>
+                <ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="true" isLocalOnly="false" isOpen="false" isPrivate="false" name="testService">
+                    <ResultType baseType="NOTHING" description="" name="result" ordinal="0"/>
+                    <ParameterDefinitions/>
+                </ServiceDefinition>
+            </ServiceDefinitions>
             <EventDefinitions/>
             <ServiceMappings/>
-            <ServiceImplementations/>
+            <ServiceImplementations>
+                <ServiceImplementation description="" handlerName="Script" name="testService">
+                    <ConfigurationTables>
+                        <ConfigurationTable dataShapeName="" description="" isMultiRow="false" name="Script" ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/>
+                                    <FieldDefinition baseType="JSON" description="" name="editorSettings" ordinal="0"/>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code><![CDATA[logger.warn("test");]]></code>
+                                    <editorSettings>
+                                        <json><![CDATA[{"viewState":{"viewState":{"firstPositionDeltaTop":0,"scrollLeft":0,"firstPosition":{"column":1,"lineNumber":1}},"cursorState":[{"inSelectionMode":false,"selectionStart":{"column":21,"lineNumber":1},"position":{"column":21,"lineNumber":1}}],"contributionsState":{"editor.contrib.wordHighlighter":false,"editor.contrib.folding":{"provider":"indent","lineCount":1,"foldedImports":false}}}}]]></json>
+                                    </editorSettings>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+            </ServiceImplementations>
             <Subscriptions/>
             <avatar/>
             <DesignTimePermissions>
