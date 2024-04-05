@@ -35,6 +35,7 @@
             </ConfigurationTables>
             <ThingShape>
                 <PropertyDefinitions>
+                    <PropertyDefinition aspect.dataChangeType="VALUE" baseType="STRING" category="" description="" isLocalOnly="false" name="Test_Adi" ordinal="3"/>
                     <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" baseType="STRING" category="" description="" isLocalOnly="false" name="Test_Dan" ordinal="2"/>
                 </PropertyDefinitions>
                 <ServiceDefinitions/>
@@ -48,6 +49,7 @@
             <RemoteServiceBindings/>
             <RemoteEventBindings/>
             <AlertConfigurations>
+                <AlertDefinitions name="Test_Adi"/>
                 <AlertDefinitions name="Test_Dan"/>
             </AlertConfigurations>
             <ImplementedShapes/>
