@@ -1,197 +1,91 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Entities
- majorVersion="9"
- minorVersion="5"
- universal="password">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Entities headers="X-XSRF-TOKEN=TWX-XSRF-TOKEN-VALUE:appKey=089a566e-e2e1-47a5-bd52-f13c330cebd9:Content-Type=application/json" majorVersion="9" minorVersion="5" universal="password">
     <ThingTemplates>
-        <ThingTemplate
-         aspect.isSystemObject="false"
-         baseThingTemplate="PTC.Base.CommonManager_TT"
-         description="test"
-         documentationContent=""
-         effectiveThingPackage="ConfiguredThing"
-         homeMashup=""
-         inheritedValueStream=""
-         name="PTCSC.TestBB2.Manager_TT"
-         projectName="PTCSC.TestBB2"
-         tags=""
-         thingPackage=""
-         valueStream="">
-            <avatar></avatar>
+        <ThingTemplate aspect.isSystemObject="false" baseThingTemplate="PTC.Base.CommonManager_TT" description="test" documentationContent="" effectiveThingPackage="ConfiguredThing" homeMashup="" inheritedValueStream="" name="PTCSC.TestBB2.Manager_TT" projectName="PTCSC.TestBB2" tags="" thingPackage="" valueStream="">
+            <avatar/>
             <DesignTimePermissions>
-                <Create></Create>
-                <Read></Read>
-                <Update></Update>
-                <Delete></Delete>
-                <Metadata></Metadata>
+                <Create/>
+                <Read/>
+                <Update/>
+                <Delete/>
+                <Metadata/>
             </DesignTimePermissions>
-            <RunTimePermissions></RunTimePermissions>
+            <RunTimePermissions/>
             <VisibilityPermissions>
                 <Visibility>
-                    <Principal
-                     isPermitted="true"
-                     name="PTCSC.TestBB2.Default_OR"
-                     type="Organization"></Principal>
-                    <Principal
-                     isPermitted="true"
-                     name="PTCSC.TestBB2.Default_OR:PTCSC.TestBB2.Admin_UG"
-                     type="OrganizationalUnit"></Principal>
+                    <Principal isPermitted="true" name="PTCSC.TestBB2.Default_OR" type="Organization"/>
+                    <Principal isPermitted="true" name="PTCSC.TestBB2.Default_OR:PTCSC.TestBB2.Admin_UG" type="OrganizationalUnit"/>
                 </Visibility>
             </VisibilityPermissions>
-            <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
+            <ConfigurationTableDefinitions/>
             <ConfigurationTables>
-                <ConfigurationTable
-                 dataShapeName=""
-                 description="Configuration table used to identify managers that the building block should use"
-                 isMultiRow="true"
-                 name="ManagerConfiguration"
-                 ordinal="0">
+                <ConfigurationTable dataShapeName="" description="Configuration table used to identify managers that the building block should use" isMultiRow="true" name="ManagerConfiguration" ordinal="0">
                     <DataShape>
                         <FieldDefinitions>
-                            <FieldDefinition
-                             aspect.isPrimaryKey="true"
-                             baseType="STRING"
-                             description="unique identifier for the manager that needs to be configured"
-                             name="id"
-                             ordinal="1"></FieldDefinition>
-                            <FieldDefinition
-                             aspect.isPrimaryKey="false"
-                             aspect.thingShape="PTC.Base.CommonManagement_TS"
-                             baseType="THINGNAME"
-                             description="Name of the Manager Thing to be configured"
-                             name="managerThingName"
-                             ordinal="2"></FieldDefinition>
+                            <FieldDefinition aspect.isPrimaryKey="true" baseType="STRING" description="unique identifier for the manager that needs to be configured" name="id" ordinal="1"/>
+                            <FieldDefinition aspect.isPrimaryKey="false" aspect.thingShape="PTC.Base.CommonManagement_TS" baseType="THINGNAME" description="Name of the Manager Thing to be configured" name="managerThingName" ordinal="2"/>
                         </FieldDefinitions>
                     </DataShape>
-                    <Rows></Rows>
+                    <Rows/>
                 </ConfigurationTable>
-                <ConfigurationTable
-                 dataShapeName=""
-                 description=""
-                 isMultiRow="true"
-                 name="MashupConfiguration"
-                 ordinal="0">
+                <ConfigurationTable dataShapeName="" description="" isMultiRow="true" name="MashupConfiguration" ordinal="0">
                     <DataShape>
                         <FieldDefinitions>
-                            <FieldDefinition
-                             aspect.isPrimaryKey="true"
-                             baseType="STRING"
-                             description="unique identifier used to identify the thing or mashup that is being configured"
-                             name="id"
-                             ordinal="1"></FieldDefinition>
-                            <FieldDefinition
-                             aspect.isPrimaryKey="false"
-                             baseType="MASHUPNAME"
-                             description="name of the mashup to configure"
-                             name="mashupName"
-                             ordinal="2"></FieldDefinition>
+                            <FieldDefinition aspect.isPrimaryKey="true" baseType="STRING" description="unique identifier used to identify the thing or mashup that is being configured" name="id" ordinal="1"/>
+                            <FieldDefinition aspect.isPrimaryKey="false" baseType="MASHUPNAME" description="name of the mashup to configure" name="mashupName" ordinal="2"/>
                         </FieldDefinitions>
                     </DataShape>
-                    <Rows></Rows>
+                    <Rows/>
                 </ConfigurationTable>
-                <ConfigurationTable
-                 dataShapeName=""
-                 description="Configuration table for dynamic menus. Menu Items can be specified here and they will show up for the given menu name. "
-                 isMultiRow="true"
-                 name="MenuConfiguration"
-                 ordinal="0">
+                <ConfigurationTable dataShapeName="" description="Configuration table for dynamic menus. Menu Items can be specified here and they will show up for the given menu name. " isMultiRow="true" name="MenuConfiguration" ordinal="0">
                     <DataShape>
                         <FieldDefinitions>
-                            <FieldDefinition
-                             aspect.isPrimaryKey="false"
-                             baseType="STRING"
-                             description=""
-                             name="menuItemMashupName"
-                             ordinal="2"></FieldDefinition>
-                            <FieldDefinition
-                             aspect.isPrimaryKey="true"
-                             baseType="STRING"
-                             description=""
-                             name="menuName"
-                             ordinal="3"></FieldDefinition>
-                            <FieldDefinition
-                             aspect.isPrimaryKey="false"
-                             baseType="INTEGER"
-                             description="An optional field to indicate the ordering of the menu items"
-                             name="menuOrderPreference"
-                             ordinal="5"></FieldDefinition>
-                            <FieldDefinition
-                             aspect.isPrimaryKey="false"
-                             baseType="STRING"
-                             description="Localization table key for the optional section that groups like menus together"
-                             name="menuSectionKey"
-                             ordinal="4"></FieldDefinition>
-                            <FieldDefinition
-                             aspect.isPrimaryKey="false"
-                             baseType="STRING"
-                             description="Localization table key for the menu label"
-                             name="menuTitleKey"
-                             ordinal="1"></FieldDefinition>
-                            <FieldDefinition
-                             aspect.dataShape="PTC.Base.ComponentMenuConfiguration"
-                             aspect.isPrimaryKey="false"
-                             baseType="INFOTABLE"
-                             description=""
-                             name="submenu"
-                             ordinal="6"></FieldDefinition>
+                            <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="" name="menuItemMashupName" ordinal="2"/>
+                            <FieldDefinition aspect.isPrimaryKey="true" baseType="STRING" description="" name="menuName" ordinal="3"/>
+                            <FieldDefinition aspect.isPrimaryKey="false" baseType="INTEGER" description="An optional field to indicate the ordering of the menu items" name="menuOrderPreference" ordinal="5"/>
+                            <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="Localization table key for the optional section that groups like menus together" name="menuSectionKey" ordinal="4"/>
+                            <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="Localization table key for the menu label" name="menuTitleKey" ordinal="1"/>
+                            <FieldDefinition aspect.dataShape="PTC.Base.ComponentMenuConfiguration" aspect.isPrimaryKey="false" baseType="INFOTABLE" description="" name="submenu" ordinal="6"/>
                         </FieldDefinitions>
                     </DataShape>
-                    <Rows></Rows>
+                    <Rows/>
                 </ConfigurationTable>
-                <ConfigurationTable
-                 dataShapeName=""
-                 description="Configuration table for any Things that need to be configured. This allows for OOTB things to be customized, and the new version that should be used can be configured here"
-                 isMultiRow="true"
-                 name="ThingConfiguration"
-                 ordinal="0">
+                <ConfigurationTable dataShapeName="" description="Configuration table for any Things that need to be configured. This allows for OOTB things to be customized, and the new version that should be used can be configured here" isMultiRow="true" name="ThingConfiguration" ordinal="0">
                     <DataShape>
                         <FieldDefinitions>
-                            <FieldDefinition
-                             aspect.isPrimaryKey="true"
-                             baseType="STRING"
-                             description="unique identifier used to identify the thing or mashup that is being configured"
-                             name="id"
-                             ordinal="1"></FieldDefinition>
-                            <FieldDefinition
-                             aspect.isPrimaryKey="false"
-                             baseType="THINGNAME"
-                             description="Name of the Thing entity or Mashup entity that is to be configured"
-                             name="thingName"
-                             ordinal="2"></FieldDefinition>
+                            <FieldDefinition aspect.isPrimaryKey="true" baseType="STRING" description="unique identifier used to identify the thing or mashup that is being configured" name="id" ordinal="1"/>
+                            <FieldDefinition aspect.isPrimaryKey="false" baseType="THINGNAME" description="Name of the Thing entity or Mashup entity that is to be configured" name="thingName" ordinal="2"/>
                         </FieldDefinitions>
                     </DataShape>
-                    <Rows></Rows>
+                    <Rows/>
                 </ConfigurationTable>
             </ConfigurationTables>
-            <PropertyBindings></PropertyBindings>
-            <RemotePropertyBindings></RemotePropertyBindings>
-            <RemoteServiceBindings></RemoteServiceBindings>
-            <RemoteEventBindings></RemoteEventBindings>
-            <AlertConfigurations></AlertConfigurations>
+            <PropertyBindings/>
+            <RemotePropertyBindings/>
+            <RemoteServiceBindings/>
+            <RemoteEventBindings/>
+            <AlertConfigurations/>
             <ThingShape>
-                <PropertyDefinitions></PropertyDefinitions>
-                <ServiceDefinitions></ServiceDefinitions>
-                <EventDefinitions></EventDefinitions>
-                <ServiceMappings></ServiceMappings>
-                <ServiceImplementations></ServiceImplementations>
-                <Subscriptions></Subscriptions>
+                <PropertyDefinitions/>
+                <ServiceDefinitions/>
+                <EventDefinitions/>
+                <ServiceMappings/>
+                <ServiceImplementations/>
+                <Subscriptions/>
             </ThingShape>
             <ImplementedShapes>
-                <ImplementedShape
-                 name="PTCSC.TestBB2.Management_TS"
-                 type="ThingShape"></ImplementedShape>
+                <ImplementedShape name="PTCSC.TestBB2.Management_TS" type="ThingShape"/>
             </ImplementedShapes>
-            <SharedConfigurationTables></SharedConfigurationTables>
+            <SharedConfigurationTables/>
             <InstanceDesignTimePermissions>
-                <Create></Create>
-                <Read></Read>
-                <Update></Update>
-                <Delete></Delete>
-                <Metadata></Metadata>
+                <Create/>
+                <Read/>
+                <Update/>
+                <Delete/>
+                <Metadata/>
             </InstanceDesignTimePermissions>
-            <InstanceRunTimePermissions></InstanceRunTimePermissions>
+            <InstanceRunTimePermissions/>
             <InstanceVisibilityPermissions>
-                <Visibility></Visibility>
+                <Visibility/>
             </InstanceVisibilityPermissions>
         </ThingTemplate>
     </ThingTemplates>
