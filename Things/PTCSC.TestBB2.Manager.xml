@@ -61,7 +61,8 @@
             </ConfigurationTables>
             <ThingShape>
                 <PropertyDefinitions>
-                    <PropertyDefinition aspect.dataChangeType="VALUE" aspect.isPersistent="true" baseType="TEXT" category="" description="" isLocalOnly="false" name="testAdi" ordinal="2"/>
+                    <PropertyDefinition aspect.dataChangeType="VALUE" aspect.isPersistent="true" baseType="STYLETHEMENAME" category="" description="" isLocalOnly="false" name="testAdi" ordinal="2"/>
+                    <PropertyDefinition aspect.dataChangeType="VALUE" baseType="STRING" category="" description="" isLocalOnly="false" name="testAdi2" ordinal="3"/>
                 </PropertyDefinitions>
                 <ServiceDefinitions/>
                 <EventDefinitions/>
@@ -75,6 +76,7 @@
             <RemoteEventBindings/>
             <AlertConfigurations>
                 <AlertDefinitions name="testAdi"/>
+                <AlertDefinitions name="testAdi2"/>
             </AlertConfigurations>
             <ImplementedShapes/>
             <ThingProperties>
