@@ -35,18 +35,42 @@
             <AlertConfigurations>
                 <AlertDefinitions name="testAdi"/>
                 <AlertDefinitions name="testAdi2"/>
+                <AlertDefinitions name="testAdi3"/>
                 <AlertDefinitions name="testDan"/>
             </AlertConfigurations>
             <ThingShape>
                 <PropertyDefinitions>
                     <PropertyDefinition aspect.dataChangeType="VALUE" baseType="STRING" category="" description="" isLocalOnly="false" name="testAdi" ordinal="2"/>
                     <PropertyDefinition aspect.dataChangeType="VALUE" baseType="STRING" category="" description="" isLocalOnly="false" name="testAdi2" ordinal="4"/>
+                    <PropertyDefinition aspect.dataChangeType="VALUE" baseType="STRING" category="" description="" isLocalOnly="false" name="testAdi3" ordinal="5"/>
                     <PropertyDefinition aspect.dataChangeType="VALUE" baseType="STRING" category="" description="" isLocalOnly="false" name="testDan" ordinal="3"/>
                 </PropertyDefinitions>
-                <ServiceDefinitions/>
+                <ServiceDefinitions>
+                    <ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="newService">
+                        <ResultType baseType="BOOLEAN" description="" name="result" ordinal="0"/>
+                        <ParameterDefinitions/>
+                    </ServiceDefinition>
+                </ServiceDefinitions>
                 <EventDefinitions/>
                 <ServiceMappings/>
-                <ServiceImplementations/>
+                <ServiceImplementations>
+                    <ServiceImplementation description="" handlerName="Script" name="newService">
+                        <ConfigurationTables>
+                            <ConfigurationTable dataShapeName="" description="" isMultiRow="false" name="Script" ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code><![CDATA[result = true;]]></code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                </ServiceImplementations>
                 <Subscriptions/>
             </ThingShape>
             <ImplementedShapes/>
