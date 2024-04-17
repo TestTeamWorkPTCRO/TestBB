@@ -5,6 +5,10 @@
                 <PropertyDefinition aspect.dataChangeType="VALUE" baseType="STRING" category="" description="" isLocalOnly="false" name="test" ordinal="2"/>
             </PropertyDefinitions>
             <ServiceDefinitions>
+                <ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="true" isLocalOnly="false" isOpen="false" isPrivate="false" name="getData">
+                    <ResultType baseType="STRING" description="" name="result" ordinal="0"/>
+                    <ParameterDefinitions/>
+                </ServiceDefinition>
                 <ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="true" isLocalOnly="false" isOpen="false" isPrivate="false" name="newService">
                     <ResultType baseType="NUMBER" description="" name="result" ordinal="0"/>
                     <ParameterDefinitions>
@@ -12,22 +16,30 @@
                         <FieldDefinition baseType="STRING" description="" name="test2" ordinal="2"/>
                     </ParameterDefinitions>
                 </ServiceDefinition>
-                <ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="test2">
-                    <ResultType baseType="NOTHING" description="" name="result" ordinal="0"/>
-                    <ParameterDefinitions/>
-                </ServiceDefinition>
-                <ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="test4">
-                    <ResultType baseType="NOTHING" description="" name="result" ordinal="0"/>
-                    <ParameterDefinitions/>
-                </ServiceDefinition>
-                <ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="true" isLocalOnly="false" isOpen="false" isPrivate="false" name="testService">
-                    <ResultType baseType="NOTHING" description="" name="result" ordinal="0"/>
-                    <ParameterDefinitions/>
-                </ServiceDefinition>
             </ServiceDefinitions>
             <EventDefinitions/>
             <ServiceMappings/>
             <ServiceImplementations>
+                <ServiceImplementation description="" handlerName="Script" name="getData">
+                    <ConfigurationTables>
+                        <ConfigurationTable dataShapeName="" description="" isMultiRow="false" name="Script" ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/>
+                                    <FieldDefinition baseType="JSON" description="" name="editorSettings" ordinal="0"/>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code><![CDATA[let result = "test";]]></code>
+                                    <editorSettings>
+                                        <json><![CDATA[{"viewState":{"viewState":{"firstPositionDeltaTop":0,"scrollLeft":0,"firstPosition":{"column":1,"lineNumber":1}},"cursorState":[{"inSelectionMode":false,"selectionStart":{"column":21,"lineNumber":1},"position":{"column":21,"lineNumber":1}}],"contributionsState":{"editor.contrib.wordHighlighter":false,"editor.contrib.folding":{"provider":"indent","lineCount":1,"foldedImports":false}}}}]]></json>
+                                    </editorSettings>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
                 <ServiceImplementation description="" handlerName="Script" name="newService">
                     <ConfigurationTables>
                         <ConfigurationTable dataShapeName="" description="" isMultiRow="false" name="Script" ordinal="0">
@@ -39,67 +51,6 @@
                             <Rows>
                                 <Row>
                                     <code><![CDATA[result = 1;]]></code>
-                                </Row>
-                            </Rows>
-                        </ConfigurationTable>
-                    </ConfigurationTables>
-                </ServiceImplementation>
-                <ServiceImplementation description="" handlerName="Script" name="test2">
-                    <ConfigurationTables>
-                        <ConfigurationTable dataShapeName="" description="" isMultiRow="false" name="Script" ordinal="0">
-                            <DataShape>
-                                <FieldDefinitions>
-                                    <FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/>
-                                    <FieldDefinition baseType="JSON" description="" name="editorSettings" ordinal="0"/>
-                                </FieldDefinitions>
-                            </DataShape>
-                            <Rows>
-                                <Row>
-                                    <code/>
-                                    <editorSettings>
-                                        <json><![CDATA[{"viewState":{"viewState":{"firstPositionDeltaTop":0,"scrollLeft":0,"firstPosition":{"column":1,"lineNumber":1}},"cursorState":[{"inSelectionMode":false,"selectionStart":{"column":1,"lineNumber":1},"position":{"column":1,"lineNumber":1}}],"contributionsState":{"editor.contrib.wordHighlighter":false,"editor.contrib.folding":{"provider":"indent","lineCount":1,"foldedImports":false}}}}]]></json>
-                                    </editorSettings>
-                                </Row>
-                            </Rows>
-                        </ConfigurationTable>
-                    </ConfigurationTables>
-                </ServiceImplementation>
-                <ServiceImplementation description="" handlerName="Script" name="test4">
-                    <ConfigurationTables>
-                        <ConfigurationTable dataShapeName="" description="" isMultiRow="false" name="Script" ordinal="0">
-                            <DataShape>
-                                <FieldDefinitions>
-                                    <FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/>
-                                    <FieldDefinition baseType="JSON" description="" name="editorSettings" ordinal="0"/>
-                                </FieldDefinitions>
-                            </DataShape>
-                            <Rows>
-                                <Row>
-                                    <code/>
-                                    <editorSettings>
-                                        <json><![CDATA[{"viewState":{"viewState":{"firstPositionDeltaTop":0,"scrollLeft":0,"firstPosition":{"column":1,"lineNumber":1}},"cursorState":[{"inSelectionMode":false,"selectionStart":{"column":1,"lineNumber":1},"position":{"column":1,"lineNumber":1}}],"contributionsState":{"editor.contrib.wordHighlighter":false,"editor.contrib.folding":{"provider":"indent","lineCount":1,"foldedImports":false}}}}]]></json>
-                                    </editorSettings>
-                                </Row>
-                            </Rows>
-                        </ConfigurationTable>
-                    </ConfigurationTables>
-                </ServiceImplementation>
-                <ServiceImplementation description="" handlerName="Script" name="testService">
-                    <ConfigurationTables>
-                        <ConfigurationTable dataShapeName="" description="" isMultiRow="false" name="Script" ordinal="0">
-                            <DataShape>
-                                <FieldDefinitions>
-                                    <FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/>
-                                    <FieldDefinition baseType="JSON" description="" name="editorSettings" ordinal="0"/>
-                                </FieldDefinitions>
-                            </DataShape>
-                            <Rows>
-                                <Row>
-                                    <code><![CDATA[logger.warn("test");
-logger.warn("test");]]></code>
-                                    <editorSettings>
-                                        <json><![CDATA[{"viewState":{"viewState":{"firstPositionDeltaTop":0,"scrollLeft":0,"firstPosition":{"column":1,"lineNumber":1}},"cursorState":[{"inSelectionMode":false,"selectionStart":{"column":21,"lineNumber":2},"position":{"column":21,"lineNumber":2}}],"contributionsState":{"editor.contrib.wordHighlighter":false,"editor.contrib.folding":{"provider":"indent","lineCount":2,"foldedImports":false}}}}]]></json>
-                                    </editorSettings>
                                 </Row>
                             </Rows>
                         </ConfigurationTable>
