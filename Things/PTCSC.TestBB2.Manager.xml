@@ -61,12 +61,55 @@
             </ConfigurationTables>
             <ThingShape>
                 <PropertyDefinitions>
+                    <PropertyDefinition aspect.dataChangeType="VALUE" baseType="STRING" category="" description="" isLocalOnly="false" name="test3" ordinal="3"/>
                     <PropertyDefinition aspect.dataChangeType="VALUE" aspect.isPersistent="true" baseType="TEXT" category="" description="" isLocalOnly="false" name="testAdi" ordinal="2"/>
                 </PropertyDefinitions>
-                <ServiceDefinitions/>
+                <ServiceDefinitions>
+                    <ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="DisableButton">
+                        <ResultType baseType="BOOLEAN" description="" name="result" ordinal="0"/>
+                        <ParameterDefinitions/>
+                    </ServiceDefinition>
+                    <ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="true" isLocalOnly="false" isOpen="false" isPrivate="false" name="EnableButton">
+                        <ResultType baseType="BOOLEAN" description="" name="result" ordinal="0"/>
+                        <ParameterDefinitions/>
+                    </ServiceDefinition>
+                </ServiceDefinitions>
                 <EventDefinitions/>
                 <ServiceMappings/>
-                <ServiceImplementations/>
+                <ServiceImplementations>
+                    <ServiceImplementation description="" handlerName="Script" name="DisableButton">
+                        <ConfigurationTables>
+                            <ConfigurationTable dataShapeName="" description="" isMultiRow="false" name="Script" ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code><![CDATA[result = true;]]></code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation description="" handlerName="Script" name="EnableButton">
+                        <ConfigurationTables>
+                            <ConfigurationTable dataShapeName="" description="" isMultiRow="false" name="Script" ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code><![CDATA[result = false;]]></code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                </ServiceImplementations>
                 <Subscriptions/>
             </ThingShape>
             <PropertyBindings/>
@@ -74,6 +117,7 @@
             <RemoteServiceBindings/>
             <RemoteEventBindings/>
             <AlertConfigurations>
+                <AlertDefinitions name="test3"/>
                 <AlertDefinitions name="testAdi"/>
             </AlertConfigurations>
             <ImplementedShapes/>
