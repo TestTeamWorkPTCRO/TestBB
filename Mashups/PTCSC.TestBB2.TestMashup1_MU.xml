@@ -70,6 +70,30 @@
         "Target" : "GetGlobalSessionValues"
       } ]
     },
+    "Things_PTCSC.TestBB2.Manager" : {
+      "DataName" : "Things_PTCSC.TestBB2.Manager",
+      "EntityName" : "PTCSC.TestBB2.Manager",
+      "EntityType" : "Things",
+      "Id" : "ab43ad94-dd45-4dd0-b666-a78b76ce3d1d",
+      "RefreshInterval" : 0,
+      "Services" : [ {
+        "APIMethod" : "post",
+        "Characteristic" : "Services",
+        "Id" : "88844a5b-e73a-49d9-8497-d404c8fc31d6",
+        "Name" : "DisableButton",
+        "Parameters" : { },
+        "RefreshInterval" : 0,
+        "Target" : "DisableButton"
+      }, {
+        "APIMethod" : "post",
+        "Characteristic" : "Services",
+        "Id" : "327e855c-d4bb-4533-b042-11849417413e",
+        "Name" : "EnableButton",
+        "Parameters" : { },
+        "RefreshInterval" : 0,
+        "Target" : "EnableButton"
+      } ]
+    },
     "UserExtensions" : {
       "DataName" : "UserExtensions",
       "EntityName" : "",
@@ -86,7 +110,41 @@
       } ]
     }
   },
-  "DataBindings" : [ ],
+  "DataBindings" : [ {
+    "Id" : "fffd6aa9-0a03-45a9-8fad-17aefab97806",
+    "PropertyMaps" : [ {
+      "SourceProperty" : "result",
+      "SourcePropertyBaseType" : "BOOLEAN",
+      "SourcePropertyType" : "Field",
+      "TargetProperty" : "Disabled",
+      "TargetPropertyBaseType" : "BOOLEAN",
+      "TargetPropertyType" : "property"
+    } ],
+    "SourceArea" : "Data",
+    "SourceDetails" : "AllData",
+    "SourceId" : "EnableButton",
+    "SourceSection" : "Things_PTCSC.TestBB2.Manager",
+    "TargetArea" : "UI",
+    "TargetId" : "ptcsbutton-8",
+    "TargetSection" : ""
+  }, {
+    "Id" : "6d30461b-854a-4cf9-a6c1-c222331d3682",
+    "PropertyMaps" : [ {
+      "SourceProperty" : "result",
+      "SourcePropertyBaseType" : "BOOLEAN",
+      "SourcePropertyType" : "Field",
+      "TargetProperty" : "Disabled",
+      "TargetPropertyBaseType" : "BOOLEAN",
+      "TargetPropertyType" : "property"
+    } ],
+    "SourceArea" : "Data",
+    "SourceDetails" : "AllData",
+    "SourceId" : "DisableButton",
+    "SourceSection" : "Things_PTCSC.TestBB2.Manager",
+    "TargetArea" : "UI",
+    "TargetId" : "ptcsbutton-3",
+    "TargetSection" : ""
+  } ],
   "DesignTimePermissions" : { },
   "Events" : [ ],
   "Reminders" : [ ],
@@ -196,7 +254,7 @@
       "Z-index" : 10,
       "__TypeDisplayName" : "Mashup",
       "_baseVersion" : "9.5.0-b143",
-      "id_index" : 6,
+      "id_index" : 8,
       "secureExpressionsOnly" : true,
       "supportsAutoResize" : true
     },
@@ -385,7 +443,7 @@
             "FocusOnLoad" : false,
             "IconPosition" : "left",
             "Id" : "ptcsbutton-3",
-            "Label" : "[[Button]]",
+            "Label" : "Disable",
             "LabelAlignment" : "center",
             "LastContainer" : false,
             "Left" : 396.90625,
@@ -404,8 +462,57 @@
             "_baseVersion" : "9.5.0"
           },
           "Widgets" : [ ]
+        }, {
+          "Properties" : {
+            "Area" : "UI",
+            "ButtonType" : "primary",
+            "ContextID" : "",
+            "DisableLegacyCustomClassStyles" : false,
+            "Disabled" : false,
+            "DisplayName" : "ptcs-button-8",
+            "FocusOnLoad" : false,
+            "IconPosition" : "left",
+            "Id" : "ptcsbutton-8",
+            "Label" : "Enable",
+            "LabelAlignment" : "center",
+            "LastContainer" : false,
+            "Left" : 513.8125,
+            "Margin" : "5",
+            "MultiLine" : false,
+            "ResponsiveLayout" : false,
+            "ShowDataLoading" : true,
+            "Size" : "standard",
+            "TabSequence" : 0,
+            "Top" : 377,
+            "Type" : "ptcsbutton",
+            "UseTheme" : true,
+            "Visible" : true,
+            "Z-index" : 10,
+            "__TypeDisplayName" : "Button",
+            "_baseVersion" : "9.5.0"
+          },
+          "Widgets" : [ ]
         } ]
       } ]
+    }, {
+      "Properties" : {
+        "Area" : "UI",
+        "DataShape" : "",
+        "DataType" : "BOOLEAN",
+        "DisplayName" : "DisableRouter",
+        "Id" : "eventsrouter-7",
+        "LastContainer" : false,
+        "Margin" : "5",
+        "NumberOfInputs" : "2",
+        "ResponsiveLayout" : false,
+        "ShowDataLoading" : true,
+        "Type" : "eventsrouter",
+        "Visible" : true,
+        "Z-index" : 10,
+        "__TypeDisplayName" : "Events Router",
+        "_baseVersion" : "9.5.0"
+      },
+      "Widgets" : [ ]
     } ]
   },
   "mashupType" : "mashup"
