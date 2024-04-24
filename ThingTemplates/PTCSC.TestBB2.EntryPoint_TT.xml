@@ -33,6 +33,7 @@
             <RemoteServiceBindings/>
             <RemoteEventBindings/>
             <AlertConfigurations>
+                <AlertDefinitions name="newProp"/>
                 <AlertDefinitions name="testAdi"/>
                 <AlertDefinitions name="testAdi2"/>
                 <AlertDefinitions name="testAdi3"/>
@@ -40,6 +41,7 @@
             </AlertConfigurations>
             <ThingShape>
                 <PropertyDefinitions>
+                    <PropertyDefinition aspect.dataChangeType="VALUE" aspect.isPersistent="true" baseType="STRING" category="" description="" isLocalOnly="false" name="newProp" ordinal="6"/>
                     <PropertyDefinition aspect.dataChangeType="VALUE" baseType="STRING" category="" description="" isLocalOnly="false" name="testAdi" ordinal="2"/>
                     <PropertyDefinition aspect.dataChangeType="VALUE" baseType="STRING" category="" description="" isLocalOnly="false" name="testAdi2" ordinal="4"/>
                     <PropertyDefinition aspect.dataChangeType="VALUE" baseType="STRING" category="" description="" isLocalOnly="false" name="testAdi3" ordinal="5"/>
