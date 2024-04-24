@@ -61,6 +61,7 @@
             </ConfigurationTables>
             <ThingShape>
                 <PropertyDefinitions>
+                    <PropertyDefinition aspect.dataChangeType="VALUE" aspect.isPersistent="true" baseType="STRING" category="" description="" isLocalOnly="false" name="newProp" ordinal="4"/>
                     <PropertyDefinition aspect.dataChangeType="VALUE" baseType="STRING" category="" description="" isLocalOnly="false" name="test3" ordinal="3"/>
                     <PropertyDefinition aspect.dataChangeType="VALUE" aspect.isPersistent="true" baseType="TEXT" category="" description="" isLocalOnly="false" name="testAdi" ordinal="2"/>
                 </PropertyDefinitions>
@@ -117,6 +118,7 @@
             <RemoteServiceBindings/>
             <RemoteEventBindings/>
             <AlertConfigurations>
+                <AlertDefinitions name="newProp"/>
                 <AlertDefinitions name="test3"/>
                 <AlertDefinitions name="testAdi"/>
             </AlertConfigurations>
@@ -127,6 +129,11 @@
                     <Timestamp>2024-04-01T13:03:05.107Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </testAdi>
+                <newProp>
+                    <Value/>
+                    <Timestamp>1970-01-01T00:00:00.000Z</Timestamp>
+                    <Quality>UNKNOWN</Quality>
+                </newProp>
             </ThingProperties>
         </Thing>
     </Things>
