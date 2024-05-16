@@ -22,11 +22,31 @@
                         <ResultType baseType="NOTHING" description="" name="result" ordinal="0"/>
                         <ParameterDefinitions/>
                     </ServiceDefinition>
+                    <ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="madalinService">
+                        <ResultType baseType="NOTHING" description="" name="result" ordinal="0"/>
+                        <ParameterDefinitions/>
+                    </ServiceDefinition>
                 </ServiceDefinitions>
                 <EventDefinitions/>
                 <ServiceMappings/>
                 <ServiceImplementations>
                     <ServiceImplementation description="" handlerName="Script" name="adrianService">
+                        <ConfigurationTables>
+                            <ConfigurationTable dataShapeName="" description="" isMultiRow="false" name="Script" ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code/>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation description="" handlerName="Script" name="madalinService">
                         <ConfigurationTables>
                             <ConfigurationTable dataShapeName="" description="" isMultiRow="false" name="Script" ordinal="0">
                                 <DataShape>
