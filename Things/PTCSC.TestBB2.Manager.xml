@@ -74,6 +74,10 @@
                         <ResultType baseType="BOOLEAN" description="" name="result" ordinal="0"/>
                         <ParameterDefinitions/>
                     </ServiceDefinition>
+                    <ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="test_Dan">
+                        <ResultType baseType="NOTHING" description="" name="result" ordinal="0"/>
+                        <ParameterDefinitions/>
+                    </ServiceDefinition>
                 </ServiceDefinitions>
                 <EventDefinitions/>
                 <ServiceMappings/>
@@ -110,6 +114,22 @@
                             </ConfigurationTable>
                         </ConfigurationTables>
                     </ServiceImplementation>
+                    <ServiceImplementation description="" handlerName="Script" name="test_Dan">
+                        <ConfigurationTables>
+                            <ConfigurationTable dataShapeName="" description="" isMultiRow="false" name="Script" ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code/>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
                 </ServiceImplementations>
                 <Subscriptions/>
             </ThingShape>
@@ -131,8 +151,8 @@
                 </testAdi>
                 <newProp>
                     <Value/>
-                    <Timestamp>1970-01-01T00:00:00.000Z</Timestamp>
-                    <Quality>UNKNOWN</Quality>
+                    <Timestamp>2024-04-24T09:39:07.758Z</Timestamp>
+                    <Quality>GOOD</Quality>
                 </newProp>
             </ThingProperties>
         </Thing>
