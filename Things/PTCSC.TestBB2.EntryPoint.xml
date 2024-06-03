@@ -39,10 +39,32 @@
                     <PropertyDefinition aspect.dataChangeType="VALUE" baseType="STRING" category="" description="" isLocalOnly="false" name="Test_Adi" ordinal="3"/>
                     <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" baseType="STRING" category="" description="" isLocalOnly="false" name="Test_Dan" ordinal="2"/>
                 </PropertyDefinitions>
-                <ServiceDefinitions/>
+                <ServiceDefinitions>
+                    <ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="test">
+                        <ResultType baseType="NOTHING" description="" name="result" ordinal="0"/>
+                        <ParameterDefinitions/>
+                    </ServiceDefinition>
+                </ServiceDefinitions>
                 <EventDefinitions/>
                 <ServiceMappings/>
-                <ServiceImplementations/>
+                <ServiceImplementations>
+                    <ServiceImplementation description="" handlerName="Script" name="test">
+                        <ConfigurationTables>
+                            <ConfigurationTable dataShapeName="" description="" isMultiRow="false" name="Script" ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code/>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                </ServiceImplementations>
                 <Subscriptions/>
             </ThingShape>
             <PropertyBindings/>
@@ -170,6 +192,11 @@
                     <Timestamp>2024-03-20T14:59:15.516Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </upgradeComponentStatus>
+                <newProp>
+                    <Value/>
+                    <Timestamp>1970-01-01T00:00:00.000Z</Timestamp>
+                    <Quality>UNKNOWN</Quality>
+                </newProp>
             </ThingProperties>
         </Thing>
     </Things>
