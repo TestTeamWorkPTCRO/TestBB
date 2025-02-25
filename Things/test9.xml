@@ -1,1 +1,101 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><message headers="X-XSRF-TOKEN=TWX-XSRF-TOKEN-VALUE:appKey=089a566e-e2e1-47a5-bd52-f13c330cebd9:Content-Type=application/json"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Entities headers="X-XSRF-TOKEN=TWX-XSRF-TOKEN-VALUE:appKey=089a566e-e2e1-47a5-bd52-f13c330cebd9:Content-Type=application/json" majorVersion="9" minorVersion="5" universal="password">
+    <Things>
+        <Thing description="" documentationContent="" effectiveThingPackage="ConfiguredThing" enabled="true" homeMashup="" identifier="" inheritedValueStream="" name="test9" projectName="PTCSC.TestBB2" published="false" tags="" thingTemplate="GenericThing" valueStream="">
+            <avatar/>
+            <DesignTimePermissions>
+                <Create/>
+                <Read/>
+                <Update/>
+                <Delete/>
+                <Metadata/>
+            </DesignTimePermissions>
+            <RunTimePermissions/>
+            <VisibilityPermissions>
+                <Visibility/>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions/>
+            <ConfigurationTables/>
+            <ThingShape>
+                <PropertyDefinitions/>
+                <ServiceDefinitions>
+                    <ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="newService">
+                        <ResultType baseType="NOTHING" description="" name="result" ordinal="0"/>
+                        <ParameterDefinitions/>
+                    </ServiceDefinition>
+                    <ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="newService2">
+                        <ResultType baseType="BOOLEAN" description="" name="result" ordinal="0"/>
+                        <ParameterDefinitions/>
+                    </ServiceDefinition>
+                    <ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="newService3">
+                        <ResultType baseType="NOTHING" description="" name="result" ordinal="0"/>
+                        <ParameterDefinitions/>
+                    </ServiceDefinition>
+                </ServiceDefinitions>
+                <EventDefinitions/>
+                <ServiceMappings/>
+                <ServiceImplementations>
+                    <ServiceImplementation description="" handlerName="Script" name="newService">
+                        <ConfigurationTables>
+                            <ConfigurationTable dataShapeName="" description="" isMultiRow="false" name="Script" ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code/>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation description="" handlerName="Script" name="newService2">
+                        <ConfigurationTables>
+                            <ConfigurationTable dataShapeName="" description="" isMultiRow="false" name="Script" ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code><![CDATA[result = true;]]></code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation description="" handlerName="Script" name="newService3">
+                        <ConfigurationTables>
+                            <ConfigurationTable dataShapeName="" description="" isMultiRow="false" name="Script" ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/>
+                                        <FieldDefinition baseType="JSON" description="" name="editorSettings" ordinal="0"/>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code/>
+                                        <editorSettings>
+                                            <json><![CDATA[{"viewState":{"viewState":{"firstPositionDeltaTop":0,"scrollLeft":0,"firstPosition":{"column":1,"lineNumber":1}},"cursorState":[{"inSelectionMode":false,"selectionStart":{"column":1,"lineNumber":1},"position":{"column":1,"lineNumber":1}}],"contributionsState":{"editor.contrib.wordHighlighter":false,"editor.contrib.folding":{"provider":"indent","lineCount":1,"foldedImports":false}}}}]]></json>
+                                        </editorSettings>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                </ServiceImplementations>
+                <Subscriptions/>
+            </ThingShape>
+            <PropertyBindings/>
+            <RemotePropertyBindings/>
+            <RemoteServiceBindings/>
+            <RemoteEventBindings/>
+            <AlertConfigurations/>
+            <ImplementedShapes/>
+            <ThingProperties/>
+        </Thing>
+    </Things>
+</Entities>
